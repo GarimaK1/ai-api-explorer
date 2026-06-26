@@ -17,4 +17,4 @@ The API keys can be set in 2 ways: using environment variables or setting the ke
 - const ai = new GoogleGenAI({ apiKey: "YOUR_API_KEY" });
 - const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY or process.env.GOOGLE_API_KEY });
 
-## Grok API
+## OpenRouter
