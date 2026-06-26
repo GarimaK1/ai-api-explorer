@@ -1,0 +1,4 @@
+$ node gemini.ts
+Response 1: That's great! Dog owners are a special breed. How many years have you had them, and what are their names and breeds? I'd love to he
+ar more about your furry companions!
+Response 2: Since you have 2 dogs, and each dog has 4 paws, you have a total of **8 paws** in your house!

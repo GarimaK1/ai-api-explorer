@@ -1,0 +1,25 @@
+$ node gemini.ts
+{
+  recipe_name: 'Chocolate Chip Cookies',
+  ingredients: [
+    { name: 'plain flour', quantity: '2¼ cups' },
+    { name: 'baking soda', quantity: '1 teaspoon' },
+    { name: 'salt', quantity: '1 teaspoon' },
+    { name: 'unsalted butter', quantity: '1 cup' },
+    { name: 'white sugar', quantity: '¾ cup' },
+    { name: 'brown sugar', quantity: '¾ cup' },
+    { name: 'vanilla extract', quantity: '1 teaspoon' },
+    { name: 'eggs', quantity: '2' },
+    { name: 'semisweet chocolate chips', quantity: '2 cups' }
+  ],
+  instructions: [
+    'Heat the oven to 375°F (190°C).',
+    'Combine the flour, baking soda, and salt in a bowl and set aside.',
+    'In a separate large bowl, beat the butter together with both sugars until the mixture becomes smooth and airy.',
+    'Mix in the vanilla, then add the eggs one after the other, blending well after each addition.',
+    'Slowly incorporate the dry ingredients into the butter mixture, stirring only until everything is evenly mixed.',
+    'Fold in the chocolate chips.',
+    'Scoop spoonfuls of dough onto ungreased baking trays, leaving space between each cookie.',
+    'Bake for 9–11 minutes, or until the edges turn golden.'
+  ]
+}

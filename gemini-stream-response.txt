@@ -1,0 +1,95 @@
+$ node gemini.ts
+{
+  interaction: {
+    id: 'v1_ChdPZGc4YXIyeE9iWFMxZThQb0lDdm1BMBIXT2RnOGFyMnhPYlhTMWU4UG9JQ3ZtQTA',
+    status: 'in_progress',
+    object: 'interaction',
+    model: 'gemini-2.5-flash-lite'
+  },
+  event_type: 'interaction.created'
+}
+{
+  interaction_id: 'v1_ChdPZGc4YXIyeE9iWFMxZThQb0lDdm1BMBIXT2RnOGFyMnhPYlhTMWU4UG9JQ3ZtQTA',
+  status: 'in_progress',
+  event_type: 'interaction.status_update'
+}
+{ index: 0, step: { type: 'thought' }, event_type: 'step.start' }
+{
+  index: 0,
+  delta: {
+    signature: 'CiRlMjQ4MzBhNy01Y2Q2LTQyZmUtOTk4Yi1lZTUzOWU3MmI5YzM=',
+    type: 'thought_signature'
+  },
+  event_type: 'step.delta'
+}
+{
+  index: 0,
+  usage: {
+    total_tokens: 12,
+    total_input_tokens: 10,
+    input_tokens_by_modality: [ [Object] ],
+    total_cached_tokens: 0,
+    total_output_tokens: 2,
+    total_tool_use_tokens: 0,
+    total_thought_tokens: 0
+  },
+  event_type: 'step.stop'
+}
+{ index: 1, step: { type: 'model_output' }, event_type: 'step.start' }
+{
+  index: 1,
+  delta: { text: "Here'", type: 'text' },
+  event_type: 'step.delta'
+}
+{
+  index: 1,
+  delta: { text: 's the count from 1 to 25:\n\n1, 2, ', type: 'text' },
+  event_type: 'step.delta'
+}
+{
+  index: 1,
+  delta: {
+    text: '3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,',
+    type: 'text'
+  },
+  event_type: 'step.delta'
+}
+{
+  index: 1,
+  delta: { text: ' 17, 18, 19, 20, 21, 22, 23, 24, 25', type: 'text' },
+  event_type: 'step.delta'
+}
+{
+  index: 1,
+  usage: {
+    total_tokens: 111,
+    total_input_tokens: 10,
+    input_tokens_by_modality: [ [Object] ],
+    total_cached_tokens: 0,
+    total_output_tokens: 101,
+    total_tool_use_tokens: 0,
+    total_thought_tokens: 0
+  },
+  event_type: 'step.stop'
+}
+{
+  interaction: {
+    id: 'v1_ChdPZGc4YXIyeE9iWFMxZThQb0lDdm1BMBIXT2RnOGFyMnhPYlhTMWU4UG9JQ3ZtQTA',
+    status: 'completed',
+    usage: {
+      total_tokens: 111,
+      total_input_tokens: 10,
+      input_tokens_by_modality: [Array],
+      total_cached_tokens: 0,
+      total_output_tokens: 101,
+      total_tool_use_tokens: 0,
+      total_thought_tokens: 0
+    },
+    created: '2026-06-25T07:26:59Z',
+    updated: '2026-06-25T07:26:59Z',
+    service_tier: 'standard',
+    object: 'interaction',
+    model: 'gemini-2.5-flash-lite'
+  },
+  event_type: 'interaction.completed'
+}

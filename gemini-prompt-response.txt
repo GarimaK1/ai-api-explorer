@@ -1,0 +1,67 @@
+$ npx tsx gemini.ts
+{
+  id: 'v1_ChdPYlU2YXNmM0hzS1kxTWtQc283a2dBZxIXT2JVNmFzZjNIc0tZMU1rUHNvN2tnQWc',
+  status: 'completed',
+  usage: {
+    total_tokens: 46,
+    total_input_tokens: 15,
+    input_tokens_by_modality: [ [Object] ],
+    total_cached_tokens: 0,
+    total_output_tokens: 31,
+    total_tool_use_tokens: 0,
+    total_thought_tokens: 0
+  },
+  created: '2026-06-23T16:32:57Z',
+  updated: '2026-06-23T16:32:57Z',
+  service_tier: 'standard',
+  steps: [
+    {
+      signature: 'CiRlMjQ4MzBhNy01Y2Q2LTQyZmUtOTk4Yi1lZTUzOWU3MmI5YzM=',
+      type: 'thought'
+    },
+    { content: [Array], type: 'model_output' }
+  ],
+  object: 'interaction',
+  model: 'gemini-2.5-flash-lite',
+  sdkHttpResponse: {
+    headers: {
+      'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000',
+      'content-encoding': 'gzip',
+      'content-type': 'application/json',
+      date: 'Tue, 23 Jun 2026 16:32:57 GMT',
+      server: 'scaffolding on HTTPServer2',
+      'server-timing': 'gfet4t7; dur=8811',
+      'transfer-encoding': 'chunked',
+      vary: 'Origin, X-Origin, Referer',
+      'x-content-type-options': 'nosniff',
+      'x-frame-options': 'SAMEORIGIN',
+      'x-xss-protection': '0'
+    },
+    responseInternal: Response {
+      status: 200,
+      statusText: 'OK',
+      headers: Headers {
+        'content-type': 'application/json',
+        vary: 'Origin, X-Origin, Referer',
+        'content-encoding': 'gzip',
+        date: 'Tue, 23 Jun 2026 16:32:57 GMT',
+        server: 'scaffolding on HTTPServer2',
+        'x-xss-protection': '0',
+        'x-frame-options': 'SAMEORIGIN',
+        'x-content-type-options': 'nosniff',
+        'server-timing': 'gfet4t7; dur=8811',
+        'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000',
+        'transfer-encoding': 'chunked'
+      },
+      body: ReadableStream { locked: true, state: 'closed', supportsBYOB: true },
+      bodyUsed: true,
+      ok: true,
+      redirected: false,
+      type: 'basic',
+      url: 'https://generativelanguage.googleapis.com/v1beta/interactions'
+    },
+    json: [AsyncFunction: json]
+  },
+  output_text: "Ahoy there, matey! What brings ye to these digital seas today? Speak yer mind, and I'll lend ye an ear, savvy?"
+}
+Input tokens: 15

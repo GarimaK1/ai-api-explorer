@@ -1,0 +1,68 @@
+$ node gemini.ts
+file:///D:/22%20AIAndPrompts/ai-api-explorer/node_modules/@google/genai/dist/node/index.mjs:18073
+            return new BadRequestError(status, errorResponse, message, headers);
+                   ^
+
+BadRequestError: 400 Request blocked due to copyright/recitation content. Please modify your input and retry.
+    at APIError.generate (file:///D:/22%20AIAndPrompts/ai-api-explorer/node_modules/@google/genai/dist/node/index.mjs:18073:20)
+    at wrapAPIError (file:///D:/22%20AIAndPrompts/ai-api-explorer/node_modules/@google/genai/dist/node/index.mjs:18148:30)
+    at wrapSDKError (file:///D:/22%20AIAndPrompts/ai-api-explorer/node_modules/@google/genai/dist/node/index.mjs:18139:16)
+    at unwrapWithSdkHttpResponse (file:///D:/22%20AIAndPrompts/ai-api-explorer/node_modules/@google/genai/dist/node/index.mjs:21897:
+15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async GeminiNextGenInteractions.create (file:///D:/22%20AIAndPrompts/ai-api-explorer/node_modules/@google/genai/dist/node/ind
+ex.mjs:21747:26)
+    at async file:///D:/22%20AIAndPrompts/ai-api-explorer/gemini.ts:128:37 {
+  status: 400,
+  headers: Headers {},
+  error: {
+    httpMeta: { response: Response {}, request: Request {} },
+    error: {
+      message: 'Request blocked due to copyright/recitation content. Please modify your input and retry.',
+      code: 'The generated content was filtered because it may contain material that resembles existing copyrighted works. Try rephrasing the prompt
+. If you think this was an error, [send feedback](https://ai.google.dev/gemini-api/docs/troubleshooting).'
+    }
+  },
+  statusCode: 400,
+  body: '{"error":{"message":"Request blocked due to copyright/recitation content. Please modify your input and retry.","code":"The generated conten
+t was filtered because it may contain material that resembles existing copyrighted works. Try rephrasing the prompt. If you think this was an error,
+ [send feedback](https://ai.google.dev/gemini-api/docs/troubleshooting)."}}',
+  contentType: 'application/json; charset=UTF-8',
+  rawResponse: Response {},
+  cause: CreateInteractionClientError: Request blocked due to copyright/recitation content. Please modify your input and retry.
+      at matchFunc (file:///D:/22%20AIAndPrompts/ai-api-explorer/node_modules/@google/genai/dist/node/index.mjs:19801:19)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async $do$9 (file:///D:/22%20AIAndPrompts/ai-api-explorer/node_modules/@google/genai/dist/node/index.mjs:20754:22)
+      at async unwrapWithSdkHttpResponse (file:///D:/22%20AIAndPrompts/ai-api-explorer/node_modules/@google/genai/dist/node/index.mj
+s:21895:28)
+      at async GeminiNextGenInteractions.create (file:///D:/22%20AIAndPrompts/ai-api-explorer/node_modules/@google/genai/dist/node/i
+ndex.mjs:21747:26)
+      at async file:///D:/22%20AIAndPrompts/ai-api-explorer/gemini.ts:128:37 {
+    statusCode: 400,
+    body: '{"error":{"message":"Request blocked due to copyright/recitation content. Please modify your input and retry.","code":"The generated cont
+ent was filtered because it may contain material that resembles existing copyrighted works. Try rephrasing the prompt. If you think this was an erro
+r, [send feedback](https://ai.google.dev/gemini-api/docs/troubleshooting)."}}',
+    headers: Headers {},
+    contentType: 'application/json; charset=UTF-8',
+    rawResponse: Response {},
+    'data$': {
+      httpMeta: { response: Response {}, request: Request {} },
+      error: {
+        message: 'Request blocked due to copyright/recitation content. Please modify your input and retry.',
+        code: 'The generated content was filtered because it may contain material that resembles existing copyrighted works. Try rephrasing the prom
+pt. If you think this was an error, [send feedback](https://ai.google.dev/gemini-api/docs/troubleshooting).'
+      }
+    },
+    error: {
+      message: 'Request blocked due to copyright/recitation content. Please modify your input and retry.',
+      code: 'The generated content was filtered because it may contain material that resembles existing copyrighted works. Try rephrasing the prompt
+. If you think this was an error, [send feedback](https://ai.google.dev/gemini-api/docs/troubleshooting).'
+    }
+  }
+}
+
+Node.js v24.16.0
+Assertion failed: !(handle->flags & UV_HANDLE_CLOSING), file src\win\async.c, line 94
+
+user@user MINGW64 /d/22 AIAndPrompts/ai-api-explorer
+$ 
