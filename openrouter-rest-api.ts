@@ -1,13 +1,13 @@
 import "dotenv/config";
 
-// testing out first API call to OpenRouter API
+// First API call to OpenRouter REST API
 async function callOpenRouterAPI() {
   const response = await fetch(
     "https://openrouter.ai/api/v1/chat/completions",
     {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${process.env.OPEN_ROUTER_API_KEY}`,
+        Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

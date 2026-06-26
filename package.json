@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "@google/genai": "^2.9.0",
+    "@openrouter/sdk": "^0.13.16",
     "dotenv": "^17.4.2",
+    "openai": "^6.45.0",
     "zod": "^4.4.3"
   },
   "type": "module",
@@ -11,6 +13,9 @@
     "typescript": "^6.0.3"
   },
   "scripts": {
-    "start:gemini": "npx tsx gemini.ts"
+    "start:gemini": "npx tsx gemini.ts",
+    "start:openrouter-rest": "npx tsx openrouter-rest-api.ts",
+    "start:openrouter-sdk": "npx tsx openrouter-sdk.ts",
+    "start:openrouter-openai-sdk": "npx tsx openrouter-openai-sdk.ts"
   }
 }

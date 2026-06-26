@@ -1,0 +1,37 @@
+$ npx tsx openrouter-sdk.ts
+{
+  choices: [
+    {
+      finishReason: 'stop',
+      index: 0,
+      logprobs: null,
+      message: [Object]
+    }
+  ],
+  created: 1782475491,
+  id: 'gen-1782475491-z9PVaba7tdCQVAcy6Vwx',
+  model: 'liquid/lfm-2.5-1.2b-thinking-20260120:free',
+  object: 'chat.completion',
+  serviceTier: null,
+  systemFingerprint: null,
+  usage: {
+    completionTokens: 502,
+    completionTokensDetails: { audioTokens: 0, reasoningTokens: 616 },
+    cost: 0,
+    costDetails: {
+      upstreamInferenceCompletionsCost: 0,
+      upstreamInferenceCost: 0,
+      upstreamInferencePromptCost: 0
+    },
+    isByok: false,
+    promptTokens: 17,
+    promptTokensDetails: {
+      audioTokens: 0,
+      cacheWriteTokens: 0,
+      cachedTokens: 0,
+      videoTokens: 0
+    },
+    totalTokens: 519
+  }
+}
+Quantum computing utilizes quantum bits (qubits) that leverage superposition and entanglement to perform calculations exponentially faster than classical systems.

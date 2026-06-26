@@ -1,0 +1,66 @@
+$ npm run start:openrouter
+
+> start:openrouter
+> npx tsx open-router.ts
+
+{
+  id: 'gen-1782469937-QSr0HFFtjmsjdOVtTx7K',
+  object: 'chat.completion',
+  created: 1782469937,
+  model: 'openrouter/owl-alpha',
+  provider: 'Stealth',
+  system_fingerprint: null,
+  service_tier: null,
+  choices: [
+    {
+      index: 0,
+      logprobs: null,
+      finish_reason: 'stop',
+      native_finish_reason: 'stop',
+      message: [Object]
+    }
+  ],
+  usage: {
+    prompt_tokens: 123,
+    completion_tokens: 508,
+    total_tokens: 631,
+    cost: 0,
+    is_byok: false,
+    prompt_tokens_details: {
+      cached_tokens: 0,
+      cache_write_tokens: 0,
+      audio_tokens: 0,
+      video_tokens: 0
+    },
+    cost_details: {
+      upstream_inference_cost: 0,
+      upstream_inference_prompt_cost: 0,
+      upstream_inference_completions_cost: 0
+    },
+    completion_tokens_details: { reasoning_tokens: 0, image_tokens: 0, audio_tokens: 0 }
+  }
+}
+If you're looking for free AI models on OpenRouter as of June 26, 2026, here's a list of options that were available:
+
+1. **Google Gemini 2.0 Flash** - A lightweight, fast model from Google.
+2. **Google Gemini 2.5 Flash** - An updated version with improved reasoning.
+3. **Mistral 7B Instruct v0.3** - A versatile small language model.
+4. **Mistral 7B Instruct v0.2** - Previous version with solid performance.
+5. **Gemma 2 9B Instruct** - A capable mid-sized model from Google.
+6. **Llama 3.1 8B Instruct** - Meta's efficient small language model.
+7. **Llama 3.1 70B Instruct** - Larger version with enhanced capabilities.
+8. **Phi-3 Medium 14B Instruct (nitro)** - Microsoft's model with fast inference.
+9. **Phi-3 Mini 3.8B Instruct** - Compact version of Phi-3.
+10. **Command R** - A model optimized for RAG and tool use.
+11. **Command R 03 35B** - Updated version with better performance.
+12. **Qwen VL Plus** - A vision-language model.
+13. **Qwen 2 VL 72B** - Larger vision-language model.
+14. **DeepSeek V3** - A powerful general-purpose model.
+15. **DeepSeek R1** - Specialized for reasoning tasks.
+16. **DeepSeek R1 Distill Llama 70B** - Distilled version for efficiency.
+17. **Hermes 4 70B** - A model fine-tuned for instruction following.
+18. **Hermes 4 30B** - Smaller version of Hermes 4.
+19. **Llama 3.1 8B Instruct (nitro)** - Fast version of Llama 3.1 8B.
+20. **Llama 3.1 70B Instruct (nitro)** - Fast version of Llama 3.1 70B.
+
+Please note that model availability can change, so it's always a good idea to check OpenRouter directly for the most current list.

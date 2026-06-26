@@ -1,0 +1,69 @@
+$ npm run start:openrouter-openai-sdk
+
+> start:openrouter-openai-sdk
+> npx tsx openrouter-openai-sdk.ts
+
+{
+  id: 'gen-1782475080-aPio3uqsFosB3NopDGfX',
+  object: 'response',
+  created_at: 1782475080,
+  model: 'nvidia/nemotron-3-nano-30b-a3b:free',
+  status: 'completed',
+  completed_at: 1782475081,
+  output: [
+    {
+      id: 'rs_tmp_wo4yhe9k4ss',
+      type: 'reasoning',
+      status: 'completed',
+      content: [Array],
+      summary: [],
+      format: 'unknown'
+    },
+    {
+      id: 'msg_tmp_d0wkos54a3',
+      type: 'message',
+      role: 'assistant',
+      status: 'completed',
+      content: [Array]
+    }
+  ],
+  error: null,
+  incomplete_details: null,
+  tools: [],
+  tool_choice: 'auto',
+  parallel_tool_calls: true,
+  max_output_tokens: null,
+  temperature: 1,
+  top_p: 1,
+  presence_penalty: 0,
+  frequency_penalty: 0,
+  top_logprobs: 0,
+  max_tool_calls: null,
+  metadata: {},
+  background: false,
+  previous_response_id: null,
+  service_tier: 'auto',
+  truncation: 'disabled',
+  store: false,
+  instructions: null,
+  text: { format: { type: 'text' } },
+  reasoning: null,
+  safety_identifier: null,
+  prompt_cache_key: null,
+  usage: {
+    input_tokens: 30,
+    input_tokens_details: { cached_tokens: 0 },
+    output_tokens: 151,
+    output_tokens_details: { reasoning_tokens: 117 },
+    total_tokens: 181,
+    cost: 0,
+    is_byok: false,
+    cost_details: {
+      upstream_inference_cost: 0,
+      upstream_inference_input_cost: 0,
+      upstream_inference_output_cost: 0
+    }
+  },
+  output_text: 'When the moonlit meadow whispered its soft lullaby, a gentle unicorn with a silver mane tiptoed through star‑sparklepuddles, sprinkling sweet dreams on every sleepy flower.'
+}
+When the moonlit meadow whispered its soft lullaby, a gentle unicorn with a silver mane tiptoed through star‑sparkle puddles, sprinkling sweet dreams on every sleepy flower.
