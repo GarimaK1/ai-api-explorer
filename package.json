@@ -1,4 +1,10 @@
 {
+  "name": "ai-api-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "dependencies": {
     "@google/genai": "^2.9.0",
     "@openrouter/sdk": "^0.13.16",
@@ -13,9 +19,10 @@
     "typescript": "^6.0.3"
   },
   "scripts": {
-    "start:gemini": "npx tsx gemini.ts",
-    "start:openrouter-rest": "npx tsx openrouter-rest-api.ts",
-    "start:openrouter-sdk": "npx tsx openrouter-sdk.ts",
-    "start:openrouter-openai-sdk": "npx tsx openrouter-openai-sdk.ts"
+    "start:gemini": "tsx gemini.ts",
+    "start:openrouter-rest": "tsx openrouter-rest-api.ts",
+    "start:openrouter-sdk": "tsx openrouter-sdk.ts",
+    "start:openrouter-openai-sdk": "tsx openrouter-openai-sdk.ts",
+    "typecheck": "tsc --noEmit"
   }
 }
