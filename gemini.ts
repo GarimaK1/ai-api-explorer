@@ -120,19 +120,23 @@ Begin by heating the oven to 375°F (190°C). Combine the flour, baking soda, an
 Slowly incorporate the dry ingredients into the butter mixture, stirring only until everything is evenly mixed. Fold in the chocolate chips. Scoop spoonfuls of dough onto baking trays without greasing them, leaving some space between each cookie. Bake for approximately 9–11 minutes, or until the edges begin to turn golden.
 `;
 
-const structuredOutputInteraction = await ai.interactions.create({
-  model: "gemini-3.1-flash-lite",
-  input: prompt,
-  response_format: {
-    type: "text",
-    mime_type: "application/json",
-    schema: recipeJsonSchema,
-  },
-});
+try {
+  const structuredOutputInteraction = await ai.interactions.create({
+    model: "gemini-3.1-flash-lite",
+    input: prompt,
+    response_format: {
+      type: "text",
+      mime_type: "application/json",
+      schema: recipeJsonSchema,
+    },
+  });
 
-if (structuredOutputInteraction && structuredOutputInteraction.output_text) {
-  const recipe = recipeSchema.parse(
-    JSON.parse(structuredOutputInteraction.output_text),
-  );
-  console.log(recipe);
+  if (structuredOutputInteraction && structuredOutputInteraction.output_text) {
+    const recipe = recipeSchema.parse(
+      JSON.parse(structuredOutputInteraction.output_text),
+    );
+    console.log(recipe);
+  }
+} catch (error) {
+  console.error("Gemini API call failed:", error);
 }

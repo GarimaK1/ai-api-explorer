@@ -8,10 +8,14 @@ const client = new OpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
 });
 
-const response = await client.responses.create({
-  model: "openrouter/free",
-  input: "Write a one-sentence bedtime story about a unicorn.",
-});
+try {
+  const response = await client.responses.create({
+    model: "openrouter/free",
+    input: "Write a one-sentence bedtime story about a unicorn.",
+  });
 
-console.log(response);
-console.log(response.output_text);
+  console.log(response);
+  console.log(response.output_text);
+} catch (error) {
+  console.error("OpenRouter OpenAI SDK call failed:", error);
+}
